@@ -23,6 +23,12 @@ body{
 
 
 
+.nav_list li:nth-child(1){
+    text-decoration: underline;
+}
+
+
+
 #hamburguer{
     display:block;
 

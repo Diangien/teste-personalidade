@@ -10,6 +10,10 @@
     src:url('../fontes/Poppins-Medium.ttf') format('truetype');
 }
 
+:root{
+    --azulClaro:#1C77B2;
+}
+
 
 
 header a{
@@ -21,7 +25,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:#1C77B2;
+    background-color:var(--azulClaro);
     height: 8vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow:1px 1px 1px rgba(0, 0, 0, 0.575);
@@ -43,9 +47,21 @@ main{
     background-size:cover;
     height: 92vh;
 }
+
+/* LOGO */
 .logo{
-    font-size:2em;
+    font-size:2.4em;
 }
+
+span{
+    background: yellow;
+    color: var(--azulClaro);
+    padding:.5px;
+    border-radius:5px;
+}
+
+
+
 
 #hamburguer{
     cursor:pointer;
@@ -89,3 +105,13 @@ a:hover{
     }
 }
 
+/* MAIN */
+
+#personality-text{
+    
+}
+
+main{
+    background: url('../assets/banner.jpg') no-repeat ;
+    background-size: cover;
+}
