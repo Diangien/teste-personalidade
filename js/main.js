@@ -27,10 +27,29 @@ class MobileNavbar{
 }
 
 let h = document.getElementById('hamburguer')
+let filhos = [...document.getElementsByTagName('li')]
+
 let n = document.getElementById('nav_list')
+let existe = true
 
 h.addEventListener('click',(evt)=>{
-    n.style.classList.toggle('active')
+
+    n.classList.toggle('active')
+    if(existe){
+        filhos.map((el,i)=>{
+            el.style.animation = `fade .5s ease forwards ${i/3+ 0.15}s`
+        })
+        existe=false
+    }else{
+        filhos.map((el)=>{
+            el.style.animation = ''
+        })
+        existe=true
+    }
+   
 })
+
+
+
 
 
