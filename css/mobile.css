@@ -1,6 +1,8 @@
+
 body{
-    overflow-x:hidden;
+    overflow:hidden;
 }
+
 
 .nav_list{
     position:absolute;
@@ -27,11 +29,36 @@ body{
     text-decoration: underline;
 }
 
+.divisoria{
+    flex-direction: column;
+}
+
+.divisoria .img-divisoria{
+    width: 100%;
+}
+
+.divisoria .text-divisoria{
+    width: 100%;
+}
+
+
+
+#banner a{
+    margin-top: 40%;
+}
+
+#banner{
+    height: 50vh;
+}
+
 
 
 #hamburguer{
     display:block;
+}
 
+#personality-text{
+    font-size: 2.5em;
 }
 
 

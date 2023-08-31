@@ -26,8 +26,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     background-color:var(--azulClaro);
-    height: 8vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 10vh;
     box-shadow:1px 1px 1px rgba(0, 0, 0, 0.575);
 }
 
@@ -40,23 +39,17 @@ nav{
 .nav_list li{
     margin-left:32px;
     font-size: 24px;
-    color: #fff;;
-}
-
-main{ 
-    background-size:cover;
-    height: 92vh;
+    color: #fff;
 }
 
 /* LOGO */
 .logo{
-    font-size:2.4em;
+    font-size:2em;
 }
 
 span{
     background: yellow;
     color: var(--azulClaro);
-    padding:.5px;
     border-radius:5px;
 }
 
@@ -96,22 +89,65 @@ a:hover{
 @keyframes fade{
     0%{
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(100%);
     }
 
     100%{
         opacity: 1;
-        transform: translate(0);
+        transform: translateX(0);
     }
 }
 
-/* MAIN */
+/* BANNER */
 
 #personality-text{
-    
+    margin-top:7%;
+    font-size: 4em;
+    color: yellow;
+    text-shadow:1px 1px 1px black;
 }
 
-main{
-    background: url('../assets/banner.jpg') no-repeat ;
-    background-size: cover;
+
+#banner{
+    background: url('../assets/banner.jpg') no-repeat top center;
+    background-size: contain;
+    background-color: #E4E4E4;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+}
+
+
+#banner a{
+    color:white;
+    margin-top:13%;
+    display:inline-block;
+    text-decoration:none;
+    font-size:2em;
+    padding:10px;
+    background-color:#0a588b;
+    border:1px #fff solid;
+    border-radius: 2px;
+}
+
+
+/* DIVISORIA */
+
+.divisoria{
+    display:flex;
+    width: 100%;
+}
+
+.text-divisoria{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    font-size: larger;
+    margin-top: 8%;
+
+}
+
+.img-divisoria{
+    width: 50%;
 }
