@@ -2,11 +2,15 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
-header{
-    
+@font-face{
+    font-family:'Poppins';
+    src:url('../fontes/Poppins-Medium.ttf') format('truetype');
 }
+
+
 
 header a{
     color:white;
@@ -17,9 +21,10 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:rgb(100, 70, 70);
+    background-color:#1C77B2;
     height: 8vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow:1px 1px 1px rgba(0, 0, 0, 0.575);
 }
 
 .nav_list{
@@ -31,7 +36,7 @@ nav{
 .nav_list li{
     margin-left:32px;
     font-size: 24px;
-    
+    color: #fff;;
 }
 
 main{ 
@@ -45,9 +50,18 @@ main{
 #hamburguer{
     cursor:pointer;
     display:none;
-    background-color:white;
     color:white;
 }
+
+#hamburguer div{
+    width: 50px;
+    height: 4px;
+    background-color:#fff;
+    margin: 8px;
+    transition: .2s;
+}
+
+
 
 #hamburguer:hover{
     cursor:pointer;
@@ -58,8 +72,9 @@ a:hover{
     transition:.5s;
 }
 
+
 .nav_list.active{
-    transform: translateX(0)
+    transform: translateX(0);
 }
 
 @keyframes fade{
@@ -73,3 +88,4 @@ a:hover{
         transform: translate(0);
     }
 }
+
